@@ -5,18 +5,17 @@ import pytest
 
 '''
 1. case: Addition according to the example in the description
-2. case: Add 14 days and take into consideration working days
-3. case: Add 4 hours and take into consideration working hours
-4. case: Add 116 hours to combine case 2. & 3.
+2.-3. case: Add 14 days and take into consideration working days
+4. case: Add 4 hours and take into consideration working hours
+5. case: Add 116 hours to combine case 2. & 4.
 '''
 
 input_params = [
     (datetime(2021, 6, 28, 14, 12), 16, datetime(2021, 6, 30, 14, 12)),
     (datetime(2021, 6, 28, 14, 12), 112, datetime(2021, 7, 16, 14, 12)),
+    (datetime(2021, 6, 28, 14, 12), 40, datetime(2021, 7, 5, 14, 12)),
     (datetime(2021, 6, 28, 14, 12), 4, datetime(2021, 6, 29, 10, 12)),
     (datetime(2021, 6, 28, 14, 12), 116, datetime(2021, 7, 19, 10, 12)),
-
-    (datetime(2021, 6, 28, 14, 12), 40, datetime(2021, 7, 5, 14, 12)),
 ]
 
 
